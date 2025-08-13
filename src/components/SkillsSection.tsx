@@ -25,7 +25,8 @@ const SkillsSection = () => {
       title: "Frontend Development",
       icon: <Code2 className="h-6 w-6" />,
       skills: [
-        { name: "React/Next.js", level: 95 },
+        { name: "React", level: 95 },
+        // { name: "React/Next.js", level: 95 },
         { name: "TypeScript", level: 90 },
         { name: "Tailwind CSS", level: 95 },
         { name: "JavaScript", level: 92 }
@@ -36,8 +37,8 @@ const SkillsSection = () => {
       icon: <Database className="h-6 w-6" />,
       skills: [
         { name: "Node.js", level: 88 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 82 },
+        // { name: "Python", level: 85 },
+        // { name: "PostgreSQL", level: 82 },
         { name: "MongoDB", level: 80 }
       ]
     },
@@ -47,7 +48,8 @@ const SkillsSection = () => {
       skills: [
         { name: "UI/UX Design", level: 88 },
         { name: "Figma", level: 92 },
-        { name: "Adobe Creative Suite", level: 78 },
+        { name: "Adobe Xd", level: 78 },
+        // { name: "Adobe Creative Suite", level: 78 },
         { name: "Prototyping", level: 85 }
       ]
     },
@@ -56,8 +58,8 @@ const SkillsSection = () => {
       icon: <Zap className="h-6 w-6" />,
       skills: [
         { name: "Git/GitHub", level: 90 },
-        { name: "Docker", level: 82 },
-        { name: "AWS/Cloud", level: 78 },
+        // { name: "Docker", level: 82 },
+        // { name: "AWS/Cloud", level: 78 },
         { name: "Testing", level: 85 }
       ]
     }

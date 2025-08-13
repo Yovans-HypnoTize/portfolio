@@ -6,16 +6,16 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { 
-  Send, 
-  CheckCircle, 
-  Clock, 
-  Award, 
-  Users, 
-  Github, 
-  Linkedin, 
+import {
+  Send,
+  CheckCircle,
+  Clock,
+  Award,
+  Users,
+  Github,
+  Linkedin,
   Mail,
-  Phone
+  Phone,
 } from "lucide-react";
 
 const HireMeSection = () => {
@@ -24,7 +24,7 @@ const HireMeSection = () => {
     name: "",
     email: "",
     company: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -32,50 +32,50 @@ const HireMeSection = () => {
     {
       icon: <CheckCircle className="h-6 w-6" />,
       title: "Quality Guaranteed",
-      description: "Clean, maintainable code with comprehensive testing"
+      description: "Clean, maintainable code with comprehensive testing",
     },
     {
       icon: <Clock className="h-6 w-6" />,
       title: "On-Time Delivery",
-      description: "Committed to meeting deadlines and exceeding expectations"
+      description: "Committed to meeting deadlines and exceeding expectations",
     },
     {
       icon: <Award className="h-6 w-6" />,
       title: "Expert Knowledge",
-      description: "5+ years of experience with modern technologies"
+      description: "5+ years of experience with modern technologies",
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Great Communication",
-      description: "Regular updates and collaborative approach"
-    }
+      description: "Regular updates and collaborative approach",
+    },
   ];
 
   const socialLinks = [
-    { 
-      icon: <Github className="h-5 w-5" />, 
-      label: "GitHub", 
+    {
+      icon: <Github className="h-5 w-5" />,
+      label: "GitHub",
       url: "https://github.com",
-      color: "hover:text-foreground"
+      color: "hover:text-foreground",
     },
-    { 
-      icon: <Linkedin className="h-5 w-5" />, 
-      label: "LinkedIn", 
+    {
+      icon: <Linkedin className="h-5 w-5" />,
+      label: "LinkedIn",
       url: "https://linkedin.com",
-      color: "hover:text-blue-500"
+      color: "hover:text-blue-500",
     },
-    { 
-      icon: <Mail className="h-5 w-5" />, 
-      label: "Email", 
+    {
+      icon: <Mail className="h-5 w-5" />,
+      label: "Email",
       url: "mailto:alex@example.com",
-      color: "hover:text-red-500"
+      color: "hover:text-red-500",
     },
-    { 
-      icon: <Phone className="h-5 w-5" />, 
-      label: "Phone", 
+    {
+      icon: <Phone className="h-5 w-5" />,
+      label: "Phone",
       url: "tel:+1234567890",
-      color: "hover:text-green-500"
-    }
+      color: "hover:text-green-500",
+    },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -83,21 +83,24 @@ const HireMeSection = () => {
     setIsSubmitting(true);
 
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
     toast({
       title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+      description:
+        "Thank you for reaching out. I'll get back to you within 24 hours.",
     });
 
     setFormData({ name: "", email: "", company: "", message: "" });
     setIsSubmitting(false);
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -114,8 +117,12 @@ const HireMeSection = () => {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Why <span className="text-gradient">Hire Me?</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Let's work together to bring your vision to life with cutting-edge technology and exceptional design
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto ">
+            Let's work together to bring your vision to life with cutting-edge
+            technology and exceptional design
+          </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
+            Use the form below to reach out.
           </p>
         </motion.div>
 
@@ -161,11 +168,14 @@ const HireMeSection = () => {
             className="space-y-6"
           >
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold">Let's Start a Conversation</h3>
+              <h3 className="text-2xl font-semibold">
+                Let's Start a Conversation
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Ready to take your project to the next level? I'm here to help you build 
-                something amazing. Whether you need a complete web application, a stunning 
-                website, or technical consultation, let's discuss how we can work together.
+                Ready to take your project to the next level? I'm here to help
+                you build something amazing. Whether you need a complete web
+                application, a stunning website, or technical consultation,
+                let's discuss how we can work together.
               </p>
             </div>
 
@@ -177,9 +187,12 @@ const HireMeSection = () => {
                   "Frontend development with modern frameworks",
                   "UI/UX design and prototyping",
                   "Performance optimization and scaling",
-                  "Technical consultation and code reviews"
+                  "Technical consultation and code reviews",
                 ].map((service, idx) => (
-                  <li key={idx} className="flex items-center text-muted-foreground">
+                  <li
+                    key={idx}
+                    className="flex items-center text-muted-foreground"
+                  >
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                     {service}
                   </li>
@@ -255,8 +268,8 @@ const HireMeSection = () => {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     disabled={isSubmitting}
                     className="w-full hero-gradient text-white hover:shadow-glow transition-all duration-300"
                   >

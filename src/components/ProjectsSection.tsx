@@ -110,7 +110,7 @@ const ProjectsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -119,7 +119,7 @@ const ProjectsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="card-gradient border-border/50 hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+              <Card className="card-gradient min-h-[450px] border-border/50 hover:shadow-elegant transition-all duration-300 overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
