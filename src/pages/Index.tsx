@@ -15,7 +15,7 @@ const Index = () => {
     // Ensure a minimum loading time for smooth experience
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

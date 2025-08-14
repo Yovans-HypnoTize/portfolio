@@ -82,7 +82,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-primary/20 hover:bg-primary/5 transition-all duration-300"
+              className="border-primary/20 hover:bg-primary/40 transition-all duration-300"
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV

@@ -51,7 +51,7 @@ const Navigation = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
         // className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 hidden md:block"
-        className="fixed items-center justify-center w-full hidden sm:flex "
+        className="fixed items-center justify-center w-full hidden sm:flex z-50"
       >
         <div className="flex items-center justify-center mt-2">
           <div className="card-gradient rounded-full px-6 py-3 shadow-elegant border border-border/50 backdrop-blur-sm">

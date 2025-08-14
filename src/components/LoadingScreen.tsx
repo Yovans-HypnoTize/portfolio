@@ -6,7 +6,7 @@ const loadingMessages = [
   "Preparing the interface...",
   "Setting up portfolio...",
   "Almost ready...",
-  "Finalizing details..."
+  "Finalizing details...",
 ];
 
 export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
@@ -47,7 +47,7 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
             >
               Welcome to Yuvaraj's Portfolio
             </motion.h1>
-            
+
             <div className="h-8 flex items-center justify-center">
               <AnimatePresence mode="wait">
                 <motion.p
@@ -63,28 +63,30 @@ export const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
               </AnimatePresence>
             </div>
 
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
-              className="flex space-x-2"
-            >
-              {[0, 1, 2].map((index) => (
-                <motion.div
-                  key={index}
-                  animate={{
-                    scale: [1, 1.2, 1],
-                    opacity: [0.5, 1, 0.5],
-                  }}
-                  transition={{
-                    duration: 1,
-                    repeat: Infinity,
-                    delay: index * 0.2,
-                  }}
-                  className="w-3 h-3 bg-primary rounded-full"
-                />
-              ))}
-            </motion.div>
+            <div className="flex justify-center">
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
+                className="flex space-x-2"
+              >
+                {[0, 1, 2].map((index) => (
+                  <motion.div
+                    key={index}
+                    animate={{
+                      scale: [1, 1.2, 1],
+                      opacity: [0.5, 1, 0.5],
+                    }}
+                    transition={{
+                      duration: 1,
+                      repeat: Infinity,
+                      delay: index * 0.2,
+                    }}
+                    className="w-3 h-3 bg-primary rounded-full"
+                  />
+                ))}
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       )}
