@@ -42,7 +42,7 @@ const HireMeSection = () => {
     {
       icon: <Award className="h-6 w-6" />,
       title: "Expert Knowledge",
-      description: "5+ years of experience with modern technologies",
+      description: "A year of experience with modern technologies",
     },
     {
       icon: <Users className="h-6 w-6" />,
@@ -185,7 +185,6 @@ const HireMeSection = () => {
                 {[
                   "Full-stack web application development",
                   "Frontend development with modern frameworks",
-                  "UI/UX design and prototyping",
                   "Performance optimization and scaling",
                   "Technical consultation and code reviews",
                 ].map((service, idx) => (

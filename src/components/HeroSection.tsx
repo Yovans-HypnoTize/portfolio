@@ -59,8 +59,7 @@ const HeroSection = () => {
             transition={{ delay: 1 }}
             className="text-lg text-muted-foreground leading-relaxed max-w-lg"
           >
-            I craft beautiful, functional websites and applications that deliver
-            exceptional user experiences. Let's bring your vision to life with
+            I craft beautiful, functional websites and user-centric web and mobile applications. I have successfully contributed to five major projects across diverse industries. Let's bring your vision to life with
             modern technology and creative design.
           </motion.p>
 

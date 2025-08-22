@@ -56,8 +56,8 @@ const AboutSection = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Started as a curious computer science student, I've evolved into a full-stack developer 
-                with over 5 years of experience. My journey began with simple HTML pages and has grown 
+                Started as a curious computer science student, I've evolved into a software engineer 
+                with over 1 year of experience. My journey began with simple HTML pages and has grown 
                 into building complex, scalable applications that serve thousands of users.
               </p>
               <p className="text-muted-foreground leading-relaxed">

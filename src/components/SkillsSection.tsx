@@ -26,7 +26,7 @@ const SkillsSection = () => {
       icon: <Code2 className="h-6 w-6" />,
       skills: [
         { name: "React", level: 95 },
-        // { name: "React/Next.js", level: 95 },
+        { name: "React Native", level: 75 },
         { name: "TypeScript", level: 90 },
         { name: "Tailwind CSS", level: 95 },
         { name: "JavaScript", level: 92 }
@@ -36,21 +36,21 @@ const SkillsSection = () => {
       title: "Backend Development",
       icon: <Database className="h-6 w-6" />,
       skills: [
-        { name: "Node.js", level: 88 },
+        { name: "Node.js", level:75 },
         // { name: "Python", level: 85 },
         // { name: "PostgreSQL", level: 82 },
-        { name: "MongoDB", level: 80 }
+        { name: "MongoDB", level: 75 }
       ]
     },
     {
       title: "Design & UX",
       icon: <Palette className="h-6 w-6" />,
       skills: [
-        { name: "UI/UX Design", level: 88 },
+        { name: "UI/UX Design", level: 75 },
         { name: "Figma", level: 92 },
-        { name: "Adobe Xd", level: 78 },
+        { name: "Adobe Xd", level: 75 },
         // { name: "Adobe Creative Suite", level: 78 },
-        { name: "Prototyping", level: 85 }
+        { name: "Prototyping", level: 75 }
       ]
     },
     {
@@ -60,7 +60,7 @@ const SkillsSection = () => {
         { name: "Git/GitHub", level: 90 },
         // { name: "Docker", level: 82 },
         // { name: "AWS/Cloud", level: 78 },
-        { name: "Testing", level: 85 }
+        { name: "Testing", level: 75 }
       ]
     }
   ];
@@ -79,8 +79,9 @@ const SkillsSection = () => {
             Skills & <span className="text-gradient">Expertise</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit built through years of experience and continuous learning
-          </p>
+            {/* A comprehensive toolkit built through years of experience and continuous learning */}
+         
+         A proven toolkit crafted through experience and insight </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
