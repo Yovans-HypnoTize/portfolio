@@ -17,6 +17,7 @@ import {
   Mail,
   Phone,
 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const HireMeSection = () => {
   const { toast } = useToast();
@@ -67,13 +68,14 @@ const HireMeSection = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      url: "mailto:alex@example.com",
+      url: "https://mail.google.com/mail/?view=cm&to=vmrasuyogeshwaran222@gmail.com",
+      // url: "mailto:vmrasuyogeshwaran222@gmail.com",
       color: "hover:text-red-500",
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      url: "tel:+1234567890",
+      url: "tel:+91 8778555319",
       color: "hover:text-green-500",
     },
   ];
@@ -82,17 +84,29 @@ const HireMeSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      await emailjs.send(
+        "service_v80hhwd", // 'service_key'
+        "template_ly2c33r", // 'template_key'
+        formData, // data { name, email, company, message }
+        "lYwNl81ot9mNQk1_D" // 'public_key'
+      );
 
-    toast({
-      title: "Message sent successfully!",
-      description:
-        "Thank you for reaching out. I'll get back to you within 24 hours.",
-    });
+      toast({
+        title: "Message sent successfully!",
+        description:
+          "Thank you for reaching out. I'll get back to you within 24 hours.",
+      });
 
-    setFormData({ name: "", email: "", company: "", message: "" });
-    setIsSubmitting(false);
+      setFormData({ name: "", email: "", company: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Something went wrong. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (

@@ -37,7 +37,7 @@ const SkillsSection = () => {
       icon: <Database className="h-6 w-6" />,
       skills: [
         { name: "Node.js", level:75 },
-        // { name: "Python", level: 85 },
+        { name: "Express", level: 65 },
         // { name: "PostgreSQL", level: 82 },
         { name: "MongoDB", level: 75 }
       ]

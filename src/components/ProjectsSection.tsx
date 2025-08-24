@@ -3,7 +3,12 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { ExternalLink, Github, Eye } from "lucide-react";
 
 const ProjectsSection = () => {
@@ -12,84 +17,172 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      category: "Full Stack",
-      description: "Modern e-commerce platform with real-time inventory management",
-      fullDescription: "A comprehensive e-commerce solution built with React and Node.js, featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard. The platform supports multiple vendors, advanced search functionality, and mobile-responsive design.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-      features: [
-        "Real-time inventory tracking",
-        "Secure payment processing",
-        "Multi-vendor support",
-        "Advanced search and filtering",
-        "Responsive design",
-        "Admin analytics dashboard"
+      title: "Edumaat",
+      category: "Frontend",
+      description:
+        "CMS-driven education SaaS platform with dual admin and end-user interfaces",
+      fullDescription:
+        "A CMS-driven education management platform built with React and TypeScript, featuring dual admin and end-user interfaces, dynamic content loading, and role-based authentication. Supports 48+ subscription services with responsive design, reusable components, global state management via Redux Toolkit, and robust form handling using Formik and Yup.",
+      image:
+        "https://images.unsplash.com/photo-1676287568137-527bf97dd524?w=600&h=400&fit=crop",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "React Router DOM",
+        "MUI",
+        "Tailwind CSS",
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      status: "Completed"
+      features: [
+        "Dual-interface platform for admins and end users",
+        "CMS-driven dynamic content management",
+        "Role-based authentication and access control",
+        "Support for 48+ subscription-based services",
+        "Reusable, mobile-responsive UI components",
+        "Centralized global state management with Redux Toolkit",
+        "Robust form handling with Formik and Yup",
+        "Support ticketing system for subscribed services",
+      ],
+      liveUrl: "https://edumaat.com/",
+      githubUrl: "",
+      status: "Completed",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Astro Learning Platform",
       category: "Frontend",
-      description: "Collaborative task management with real-time updates",
-      fullDescription: "A powerful task management application that enables teams to collaborate effectively. Features include drag-and-drop task boards, real-time updates, file attachments, and comprehensive project analytics.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
-      features: [
-        "Drag-and-drop interface",
-        "Real-time collaboration",
-        "File attachments",
-        "Project analytics",
-        "Team management",
-        "Mobile app"
+      description:
+        "Cross-platform e-learning with admin web portal, student app, courses, and subscriptions.",
+      fullDescription:
+        "A cross-platform e-learning system built with React and React Native, featuring dedicated portals for admins/teachers (web) and students (mobile). The web portal enables admins to manage subscriptions and teachers to create courses and quizzes through multi-step forms, while the mobile app offers students an interactive learning experience with role-based access to free and premium content. The platform integrates Razorpay for subscription payments, Firebase Cloud Messaging for real-time notifications, and Redux Toolkit for scalable state management across both web and mobile.",
+      image:
+        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+      technologies: [
+        "React.js",
+        "Redux Toolkit",
+        "React Router",
+        "MUI",
+        "Bootstrap",
+        "Formik",
+        "Yup",
+        "React Native",
+        "React Navigation",
+        "FCM (Expo Notifications)",
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      status: "In Progress"
+      features: [
+        "Dual portals for Admins/Teachers (Web) and Students (Mobile)",
+        "Course and quiz creation with multi-step forms",
+        "Subscription management with tiered plans (Basic, Pro, Premium)",
+        "Role-based access control for premium content",
+        "Modern, responsive admin dashboard (MUI & Bootstrap)",
+        "Centralized state management with Redux Toolkit",
+        "Secure payments integration with Razorpay",
+        "Push notifications with Firebase Cloud Messaging (FCM)",
+        "Student app with Bottom Tab & Drawer Navigation",
+        "Support ticketing system for students",
+      ],
+      liveUrl: "",
+      githubUrl: "",
+      status: "In Progress",
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title: "Patient Engagement",
       category: "Frontend",
-      description: "Beautiful weather app with location-based forecasts",
-      fullDescription: "An elegant weather dashboard providing detailed forecasts, weather maps, and historical data. The app features a clean, intuitive interface with animated weather icons and customizable location tracking.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-      technologies: ["Vue.js", "JavaScript", "OpenWeather API", "CSS3"],
-      features: [
-        "Location-based forecasts",
-        "Interactive weather maps",
-        "Historical weather data",
-        "Animated weather icons",
-        "Multiple location tracking",
-        "Severe weather alerts"
+      description:
+        "A cross-platform healthcare app with secure login, real-time document streaming, and AI-powered doubt detection.",
+      fullDescription:
+        "A cross-platform healthcare mobile application built with React Native, providing seamless engagement between patients and doctors. The app features secure JWT-based authentication, real-time document viewing with WebSocket streaming, and AI-driven doubt detection via facial expression analysis. It includes responsive, user-friendly interfaces for accessing personalized and general medical documents, while Redux Toolkit ensures scalable global state management for sessions, documents, and chat functionality across Android and iOS.",
+      image:
+        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "React Native",
+        "Redux Toolkit",
+        "TypeScript",
+        "WebSockets",
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      status: "Completed"
+      features: [
+        "Cross-platform mobile app for Android and iOS",
+        "Secure JWT-based authentication",
+        "Responsive patient interfaces for medical document access",
+        "Real-time WebSocket streaming for document reading",
+        "AI-driven doubt detection via facial expression analysis",
+        "Scalable state management with Redux Toolkit",
+        "User session and chat management",
+        "Structured document categorization and easy navigation",
+      ],
+      liveUrl: "",
+      githubUrl: "",
+      status: "In progress",
     },
     {
       id: 4,
-      title: "Social Media Analytics",
-      category: "Full Stack",
-      description: "Analytics dashboard for social media performance",
-      fullDescription: "A comprehensive analytics platform that aggregates data from multiple social media platforms. Provides detailed insights, trend analysis, and automated reporting for social media managers and marketers.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      technologies: ["React", "Python", "Django", "PostgreSQL", "D3.js"],
-      features: [
-        "Multi-platform integration",
-        "Real-time analytics",
-        "Custom dashboard creation",
-        "Automated reporting",
-        "Competitor analysis",
-        "Export capabilities"
+      title: "Astro Tour",
+      category: "Frontend",
+      description:
+        "Travel management web app with admin/user portals, CRUD operations, and responsive design.",
+      fullDescription:
+        "A travel management web application with separate admin and user portals, designed to simplify destination management and customizable travel packages. The platform features responsive UI built with Bootstrap, CRUD operations with dynamic data rendering, and API integration with file uploads. Admins and sub-admins can efficiently manage tour packages, cities, and staff, while Redux ensures predictable state management. ESLint was used to maintain code quality and consistency.",
+      image:
+        "https://images.unsplash.com/photo-1598890777032-bde835ba27c2?w=600&h=400&fit=crop",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "React.js",
+        "Redux",
+        "TypeScript",
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      status: "Completed"
-    }
+      features: [
+        "Separate Admin Panel and User-facing portal",
+        "Responsive UI with Bootstrap grid system",
+        "CRUD operations for tours and packages",
+        "Dynamic data rendering with API integration",
+        "Admin management of staff, cities, and packages",
+        "Centralized state management using Redux",
+        "File upload support for tour content",
+        "Code consistency and optimization with ESLint",
+      ],
+      liveUrl: "https://astroexplorex.com/",
+      githubUrl: "",
+      status: "Completed",
+    },
+    {
+      id: 5,
+      title: "Back2U – Document Retrieval Application",
+      category: "Frontend",
+      description:
+        "Secure document retrieval web app with admin verification, status tracking, and payment integration",
+      fullDescription:
+        "A secure web application that allows applicants to upload missing documents, preview them, and track their status in real time. The platform features an admin panel for authorities to verify, approve, or reject submissions, a notification system to update applicants within 30 working days, and an integrated payment workflow for document retrieval. Built with React.js and Redux, the app ensures smooth state management and responsive, user-friendly interfaces with Tailwind CSS.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      technologies: [
+        "React.js",
+        "Redux",
+        "Formik",
+        "React PDF",
+        "Tailwind CSS",
+      ],
+      features: [
+        "Secure document upload and preview for applicants",
+        "Admin panel for verification, approval, and rejection",
+        "Status tracking and notifications within 30 working days",
+        "Integrated payment workflow for document retrieval",
+        "Responsive UI with Tailwind CSS",
+        "State management using Redux",
+        "Form handling with Formik",
+        "PDF preview with React PDF",
+      ],
+      liveUrl: "",
+      githubUrl: "",
+      status: "In progress",
+    },
   ];
 
   return (
@@ -106,7 +199,8 @@ const ProjectsSection = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of my recent work and the technologies I'm passionate about
+            A showcase of my recent work and the technologies I'm passionate
+            about
           </p>
         </motion.div>
 
@@ -119,7 +213,7 @@ const ProjectsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="card-gradient min-h-[450px] border-border/50 hover:shadow-elegant transition-all duration-300 overflow-hidden group">
+              <Card className="card-gradient min-h-[470px] border-border/50 hover:shadow-elegant transition-all duration-300 overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -129,7 +223,9 @@ const ProjectsSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <Badge
                     className="absolute top-4 right-4"
-                    variant={project.status === "Completed" ? "default" : "secondary"}
+                    variant={
+                      project.status === "Completed" ? "default" : "secondary"
+                    }
                   >
                     {project.status}
                   </Badge>
@@ -171,16 +267,28 @@ const ProjectsSection = () => {
                       <Eye className="h-4 w-4 mr-2" />
                       View Details
                     </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4" />
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4" />
-                      </a>
-                    </Button>
+                    {project.liveUrl.trim() !== "" && (
+                      <Button variant="outline" size="sm" asChild>
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
+                    {project.githubUrl.trim() !== "" && (
+                      <Button variant="outline" size="sm" asChild>
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -189,12 +297,17 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project Modal */}
-        <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+        <Dialog
+          open={!!selectedProject}
+          onOpenChange={() => setSelectedProject(null)}
+        >
           <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
             {selectedProject && (
               <>
                 <DialogHeader>
-                  <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
+                  <DialogTitle className="text-2xl">
+                    {selectedProject.title}
+                  </DialogTitle>
                 </DialogHeader>
                 <div className="space-y-6">
                   <img
@@ -202,7 +315,7 @@ const ProjectsSection = () => {
                     alt={selectedProject.title}
                     className="w-full h-64 object-cover rounded-lg"
                   />
-                  
+
                   <div className="space-y-4">
                     <p className="text-muted-foreground leading-relaxed">
                       {selectedProject.fullDescription}
@@ -211,39 +324,55 @@ const ProjectsSection = () => {
                     <div>
                       <h4 className="font-semibold mb-2">Key Features:</h4>
                       <ul className="grid md:grid-cols-2 gap-2">
-                        {selectedProject.features.map((feature: string, idx: number) => (
-                          <li key={idx} className="flex items-center text-sm">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
-                            {feature}
-                          </li>
-                        ))}
+                        {selectedProject.features.map(
+                          (feature: string, idx: number) => (
+                            <li key={idx} className="flex items-center text-sm">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2" />
+                              {feature}
+                            </li>
+                          )
+                        )}
                       </ul>
                     </div>
 
                     <div>
                       <h4 className="font-semibold mb-2">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
-                        {selectedProject.technologies.map((tech: string, idx: number) => (
-                          <Badge key={idx} variant="outline">
-                            {tech}
-                          </Badge>
-                        ))}
+                        {selectedProject.technologies.map(
+                          (tech: string, idx: number) => (
+                            <Badge key={idx} variant="outline">
+                              {tech}
+                            </Badge>
+                          )
+                        )}
                       </div>
                     </div>
 
                     <div className="flex gap-4 pt-4">
-                      <Button asChild>
-                        <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Live Demo
-                        </a>
-                      </Button>
-                      <Button variant="outline" asChild>
-                        <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4 mr-2" />
-                          View Code
-                        </a>
-                      </Button>
+                      {selectedProject.liveUrl.trim() !== "" && (
+                        <Button asChild>
+                          <a
+                            href={selectedProject.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-4 w-4 mr-2" />
+                            Live Demo
+                          </a>
+                        </Button>
+                      )}
+                      {selectedProject.githubUrl.trim() !== "" && (
+                        <Button variant="outline" asChild>
+                          <a
+                            href={selectedProject.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="h-4 w-4 mr-2" />
+                            View Code
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
