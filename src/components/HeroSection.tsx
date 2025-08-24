@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import heroPortrait from "@/assets/hero-portrait.jpeg";
+import YuvarajResume from "@/assets/Yuvaraj Resume.pdf";
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -49,7 +50,7 @@ const HeroSection = () => {
               transition={{ delay: 0.8 }}
               className="text-2xl lg:text-3xl text-muted-foreground font-light"
             >
-              Full Stack Developer
+              Software Engineer
             </motion.h2>
           </div>
 
@@ -59,8 +60,10 @@ const HeroSection = () => {
             transition={{ delay: 1 }}
             className="text-lg text-muted-foreground leading-relaxed max-w-lg"
           >
-            I craft beautiful, functional websites and user-centric web and mobile applications. I have successfully contributed to five major projects across diverse industries. Let's bring your vision to life with
-            modern technology and creative design.
+            I craft beautiful, functional websites and user-centric web and
+            mobile applications. I have successfully contributed to five major
+            projects across diverse industries. Let's bring your vision to life
+            with modern technology and creative design.
           </motion.p>
 
           <motion.div
@@ -82,6 +85,14 @@ const HeroSection = () => {
               variant="outline"
               size="lg"
               className="border-primary/20 hover:bg-primary/40 transition-all duration-300"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = YuvarajResume;
+                link.download = "Yuvaraj_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV
