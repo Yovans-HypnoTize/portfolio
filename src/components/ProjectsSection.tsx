@@ -270,6 +270,7 @@ const ProjectsSection = () => {
                     {project.liveUrl.trim() !== "" && (
                       <Button variant="outline" size="sm" asChild>
                         <a
+                          aria-label={project.title}
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -281,6 +282,7 @@ const ProjectsSection = () => {
                     {project.githubUrl.trim() !== "" && (
                       <Button variant="outline" size="sm" asChild>
                         <a
+                          aria-label={project.title}
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"

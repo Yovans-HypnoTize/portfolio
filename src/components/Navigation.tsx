@@ -66,6 +66,7 @@ const Navigation = () => {
                           ? "text-primary bg-primary/10"
                           : "text-muted-foreground hover:text-primary"
                       }`}
+                      name="navigation icon"
                     >
                       {item.label}{item.id === "hire" && <span><NavigationIcon className="mt-0.5 h-4 text-red-400 hover:text-red-600"/></span>}
                     </button>
