@@ -75,7 +75,7 @@ const Navigation = () => {
               </ul>
               <div className="h-4 w-px bg-border/50" />
               <ThemeToggle />
-              <ProfileDropdown />
+              {/* <ProfileDropdown /> */}
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ const Navigation = () => {
             
             <div className="flex items-center space-x-2">
               <ThemeToggle />
-              <ProfileDropdown />
+              {/* <ProfileDropdown /> */}
             </div>
           </div>
         </div>
