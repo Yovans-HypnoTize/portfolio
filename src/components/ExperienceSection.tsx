@@ -9,7 +9,7 @@ const ExperienceSection = () => {
       title: "Software Engineer",
       company: "Adhiran Infotech",
       location: "Chennai, Tamilnadu",
-      period: "2024 - Present",
+      period: "Jul 2024 - Aug 2025",
       type: "Full-time",
       description:
         "Lead development of scalable web applications. Architected microservices infrastructure and mentored junior developers.",
